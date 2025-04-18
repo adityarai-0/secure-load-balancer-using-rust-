@@ -1,0 +1,19 @@
+[package]
+name = "secure_load_balancer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+hyper = { version = "0.14", features = ["full"] }
+hyper-rustls = { version = "0.23", features = ["http2"] }
+futures = "0.3"
+chrono = "0.4"
+prometheus = "0.13"
+regex = "1.7"
+serde = { version = "1.0", features = ["derive"] }
+lazy_static = "1.4"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["json"] }
+uuid = { version = "1.2", features = ["v4"] }
+envy = "0.4"
